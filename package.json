@@ -1,11 +1,12 @@
 {
   "name": "learn-nodejs",
   "version": "1.0.0",
+  "type": "commonjs",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node --watch server.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,9 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
-    "mongoose": "^8.16.1"
+    "mongoose": "^8.16.1",
+    "redis": "^5.8.2",
+    "slugify": "^1.6.6"
   },
   "devDependencies": {
     "helmet": "^8.1.0",
